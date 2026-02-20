@@ -1,0 +1,58 @@
+.accordion__item {
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.accordion__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  color: #44659a;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+.accordion__header::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  background-image: url(assets/Images/arrow_menu.png) no-repeat 8px center;
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  content: "";
+  transition: transform 0.2s ease-out;
+}
+
+.accordion__item_show .accordion__header::after,
+.accordion__item_slidedown .accordion__header::after {
+  transform: rotate(-180deg);
+}
+
+.accordion__header:hover {
+  background-color: #fefefe;
+}
+
+.accordion__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__content a {
+  position: relative;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #212529;
+  text-decoration: none;
+  border: 1px solid rgb(0 0 0 / 12.5%);
+}
+
+.accordion__content a:hover {
+  background-color: #f8f9fa;
+}
+
+.accordion__item:not(.accordion__item_show) .accordion__body {
+  display: none;
+}

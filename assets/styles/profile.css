@@ -1,0 +1,290 @@
+.container{
+    max-width:1200px;
+}
+
+.page{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width:1920px){
+        
+    /* Container user_profile */
+    .user_profile{
+
+        margin: 40px auto;
+        font-family: sans-serif;
+    }
+
+    /* sidebar of container =================================================================================================*/
+    .user_profile .sidebar{
+            
+        min-width: 340px;
+        max-height: 800px;
+        margin-left:40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .user-nikname{
+
+        margin-bottom: 30px;
+        font-family: monospace;
+        font-weight: 700;
+        
+    }
+
+    .user-avatar{
+
+        width: 250px;
+        height: 250px;
+        margin-bottom: 20px;
+
+        border-radius: 50%;
+
+        background-position:50% 50%;
+        background-size: cover;
+    }
+
+    .change_profile_btn{
+
+        height:45px;
+        padding: 8px 50px;
+        border-radius: 8px;
+
+        font-size: 1.3em;
+        font-weight: 700;
+        
+        text-decoration:none;
+        color:black;
+        background-color:#ecebeb;
+        transition: all 200ms ease-in-out;    
+    }
+    
+    .change_profile_btn:hover{
+        
+        /* background:#; */
+    }
+    
+    .change_profile_btn:active{
+        box-shadow: 0 0 8px inset #000;
+        border: 2px solid #141414;
+    }
+
+    .btn-user-logout{
+
+        margin: 7px auto;
+        font-size: .9em;
+        font-weight: 700;
+        color: #aba9a9d3;
+    }
+
+    .box_info{
+
+        margin-top: 40px;
+        font-weight:600;
+    }
+    
+    .box_info .information_btn{
+        font-size:1.2em;
+        text-decoration:none;
+       
+    }
+
+    .box_info .information{
+        
+        margin: 20px 10px;
+    }
+    
+     .box_info h6{
+
+        font-size:.9em;
+       
+    }
+
+    .box_info p,a{
+    
+        margin: 0;
+        line-height:1.3;
+        font-size: .8em;
+        color:#b7b7b7;
+    }
+ 
+    
+    /* Container base info «Card film» ==================================================================================*/
+    .content{
+             
+        padding:5px 0 0 60px;
+    }
+      
+    .history, .favorite{
+            
+        min-height:220px;
+        margin: 50px 20px;
+    }
+    
+    .title_history, .title_favorite {
+    
+        font-size: 2em;
+        font-weight:600;
+        text-decoration:none;
+        
+    }
+    
+    .slider{
+    
+        max-width: 740px;
+        margin-top: 20px;
+        display:flex;
+        overflow: hidden;
+    }
+    
+    /* cards in the slider ====================================================================================================================  */
+    .card{
+
+        width: 150px;
+        height: 200px;
+
+        margin: 20px 20px;
+        
+        display:flex;
+        
+        flex-direction:row;
+
+        border-radius: 22px;
+
+        background-color: #371F14;
+        
+    }
+    
+    .card:hover{ 
+        width:300px;    
+    }
+     
+    .card .film_info{
+        display:none;
+    }
+    
+    .card:hover .film_info{
+     
+        width: 100px;
+        margin: 20px auto;
+        display:block;
+        
+        line-height:1.5;
+        
+        color:#8e8e8e;
+    }
+    
+    .card:hover .film_title{
+        
+        margin:0;
+        padding:0 0 10px 0;
+        font-size:1.25em;
+        line-height:1;
+        font-weight:700;
+        
+        color:#fff;
+    }
+        
+    .card_img {
+        
+        width:150px;
+        height: 200px;
+        border-radius: 10%;
+            
+    }
+    
+    
+    
+}
+
+
+   
+@media (max-width:1200px){
+        
+    .user_profile .sidebar{
+            
+        width: 100%;
+        margin:0 auto;
+        flex-wrap:wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+
+    }
+        
+    .content{
+             
+        padding:5px 0 0 60px;
+             
+    }
+    
+    /* Card film */
+    .history, .favorite{
+            
+        min-height:220px;
+        margin: 50px 20px;
+    }
+    
+    .title_history, .title_favorite{
+    
+        font-size: 2em;
+        font-weight:600;
+        text-decoration:none;
+        color:#fff;
+    }
+    
+    .slider{
+    
+        max-width: 740px;
+        margin-top: 20px;
+        display:flex;
+        flex-wrap:wrap;
+        overflow: hidden;
+    }
+    
+}
+
+
+@media (max-width:600px){
+
+    .conteiner{
+        max-width:600px;    
+    }
+
+    
+    .user_profile .sidebar{
+            
+        width: 300px;
+        margin:0 auto;
+        flex-direction: column;
+    }
+        
+    .content{
+        padding:0 20px;     
+    }
+    
+    /* Card film */
+    .history, .favorite{
+            
+        min-height:220px;
+        margin: 20px 10px;
+    }
+    
+    .slider{
+    
+        width: 300px;
+        margin-top: 20px;
+        flex-direction:column;
+        overflow: visible;
+    }
+
+    .card{
+
+        width: 150px;
+        margin: 20px 0;
+    }
+}

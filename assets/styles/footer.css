@@ -1,0 +1,67 @@
+footer{
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+}
+
+footer h5{
+    font-size: 1em;
+    margin: 30px 0 10px 0;
+}
+
+footer .materials a, .about a{
+    font-size: 0.8em;
+    color: #283A4E;
+    text-decoration: none;
+}   
+
+footer .logo{
+    text-decoration: none;
+    color: #283A4E;
+    
+    font-family: fantasy;
+    
+    display: flex;
+    align-items: center;
+
+ }
+footer .logo img{
+    width: 150px;
+    margin-left: 20px;
+}
+
+footer h1{
+    font-size: 1.5em;
+    padding: 5px 0 0 10px;
+}
+
+footer .about{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .materials{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .links{
+    margin-top: 30px;
+}
+
+footer .links button{
+    color: #fff;
+    background-color: #44659a;
+    border:1px solid #44659a;
+}
+
+footer .links p{
+    padding: 10px 30px 0 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

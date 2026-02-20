@@ -1,0 +1,78 @@
+      /* Стиль шапки сайта */
+        header{
+            max-width: 1280px;
+            max-height: 80px;
+            /* Ограничение в максимальном размере */
+
+            padding: 8px 40px;
+            /* Внутренний отступ */
+
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            color: #283A4E;
+        }
+
+
+         header .logo{
+            text-decoration: none;
+            color: #283A4E;
+            
+            font-family: fantasy;
+            
+            display: flex;
+            align-items: center;
+            margin-right: 150px;
+
+         }
+        header .logo img{
+            width: 100px;
+        }
+
+        header h1{
+            font-size: 1.3em;
+            padding: 5px 0 0 10px;
+            font-weight:lighter;
+        }
+
+        header .main-navigation{
+            margin: 12px 0 0 0;
+        }
+
+        header a.nav-link{
+
+            font-size: 18px;
+            font-weight: bolder;
+            margin: 0 15px;
+
+            text-decoration: none;
+            color: #283A4E;
+        }
+
+        header .nav-ico-link{
+            text-decoration: none;
+        }
+
+        header .main-navigation{
+
+            display: flex;
+            align-items: center;
+        }
+
+        
+        header .nav-ico{
+            display:flex;
+            align-items:center;
+            margin-left:40px;
+            
+        }
+
+        header .nav-ico-link{
+            padding: 0 10px;
+        }
+        
+        header .nav-ico-profile img{
+            margin-left:10px;
+            border-radius:50%;
+        }
